@@ -1,3 +1,4 @@
+
 /**
  * ChromaSVG - Vanilla JS Core
  */
@@ -27,8 +28,14 @@ const el = {
     exportSvg: document.getElementById('export-svg') as HTMLButtonElement,
     exportPng: document.getElementById('export-png') as HTMLButtonElement,
     exportJpeg: document.getElementById('export-jpeg') as HTMLButtonElement,
-    canvas: document.getElementById('export-canvas') as HTMLCanvasElement
+    canvas: document.getElementById('export-canvas') as HTMLCanvasElement,
+    currentYear: document.getElementById('current-year') as HTMLSpanElement
 };
+
+// Update footer year dynamically
+if (el.currentYear) {
+    el.currentYear.textContent = new Date().getFullYear().toString();
+}
 
 // --- Utils ---
 const extractColors = (svgString: string): string[] => {
