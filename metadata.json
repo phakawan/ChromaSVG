@@ -1,0 +1,5 @@
+{
+  "name": "ChromaSVG - Professional SVG Recoloring Tool",
+  "description": "A high-performance web application to upload, modify colors, and export SVG files as SVG, PNG, or JPEG with real-time preview and intuitive color extraction.",
+  "requestFramePermissions": []
+}
